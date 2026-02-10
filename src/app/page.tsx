@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <section className="flex flex-col items-center space-y-16">
         <h1 className="text-center text-3xl font-bold">
-          Manny Ventura - Software Enginer | Web Developer
+          Manny Ventura - Software Engineer | Web Developer
         </h1>
         <p className="text-lg">
           I build responsive, accessible web applications with modern technologies.
