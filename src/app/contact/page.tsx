@@ -1,7 +1,5 @@
 import { Mail, Linkedin, Github } from 'lucide-react'
 
-type ContactItemProps = {}
-
 export default function Page() {
   return (
     <>
