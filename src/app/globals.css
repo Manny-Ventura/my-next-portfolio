@@ -9,20 +9,14 @@
     --text-secondary: theme(colors.slate.300);
     --accent: theme(colors.teal.400);
 
-    body {
-      background-color: var(--bg);
-      color: var(--text-primary);
-    }
+    --radius: 16px;
+  }
+}
 
-    .card {
-      background-color: var(--surface);
-      border-color: var(--border);
-    }
-
-    a:hover {
-      background-color: 1px solid var(--accent);
-      transition: border 0.5s ease-in-out;
-    }
+@layer base {
+  body {
+    background-color: var(--bg);
+    color: var(--text-primary);
   }
 }
 
