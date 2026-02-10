@@ -11,14 +11,13 @@
 
     --radius: 16px;
   }
-}
 
-@layer base {
   body {
-    background-color: var(--bg);
-    color: var(--text-primary);
+  background-color: var(--bg);
+  color: var(--text-primary);
   }
 }
+
 
 /*
 * {
