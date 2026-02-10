@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col items-center space-y-16">
-        <h1 className="text-center text-3xl font-bold">Manny Ventura - Full-stack Web Developer</h1>
+        <h1 className="text-center text-3xl font-bold">
+          Manny Ventura - Software Enginer | Web Developer
+        </h1>
         <p className="text-lg">
           I build responsive, accessible web applications with modern technologies.
         </p>
