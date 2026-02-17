@@ -3,7 +3,9 @@
 @layer base {
   :root {
     --bg: theme(colors.slate.950);
+    --bg-hover: theme(colors.slate.900);
     --surface: theme(colors.slate.900);
+    --surface-hover: theme(colors.slate.800);
     --border: theme(colors.slate.800);
     --text-primary: theme(colors.slate.100);
     --text-secondary: theme(colors.slate.300);
@@ -15,11 +17,8 @@
   body {
     background-color: var(--bg);
     color: var(--text-primary);
-    
-  
   }
 }
-
 
 /*
 * {
