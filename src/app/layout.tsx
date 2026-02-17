@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col">
-        <header className="bg-[var(--surface)]">
+        <header className="border bg-[var(--surface)]">
           <Navbar />
         </header>
 
