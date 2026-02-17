@@ -16,13 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col">
-        <header className="border bg-[var(--surface)]">
+        <header className="border-2 border-[var(--border)] bg-[var(--surface)]">
           <Navbar />
         </header>
 
         <main className="mx-auto max-w-7xl grow space-y-24 px-6 py-12">{children}</main>
 
-        <footer className="h-full bg-[var(--surface)] p-10 text-center">
+        <footer className="h-full border-2 border-[var(--border)] bg-[var(--surface)] p-10 text-center">
           <Footer />
         </footer>
       </body>
