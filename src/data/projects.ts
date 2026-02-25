@@ -23,10 +23,8 @@ export const projects: Project[] = [
   {
     slug: 'tenant-detective',
     title: 'Tenant Detective™',
-    description: `Microsoft 365 optimization application that breaks down your licensing, usage, and security posture. 
-    Lead Frontend and Assistant Lead on Backend Design. 
-    Managed CI/CD and aided in Containerization setup to two seperate Environments for the Project.
-    Interface was used to land a client resulting in 200k yearly contract.`,
+    description: `Microsoft 365 optimization application that breaks down your licensing, usage, and security posture as well as optimized cost and recommendations. 
+    Application was used to land a client resulting in 200k yearly contract.`,
     stack: [
       'Python',
       'HTMX',
@@ -39,6 +37,9 @@ export const projects: Project[] = [
       'Docker',
       'Javascript',
       'ChartJS',
+      'Celery',
+      'Redis',
+      'Flower',
     ],
     liveUrl: 'https://tenantdetective.plow.net/',
     featured: true,
@@ -47,11 +48,8 @@ export const projects: Project[] = [
   {
     slug: 'ava-ai',
     title: 'Ava AI',
-    description: `AI Ticketing Assistant and Internal Analytics Tool.
-                  GPT-communicating Agent designed to automatically handle Autotask Ticket Routing when receiving Cloud Service incident report from Customers of a Cloud Service Provider.
-                  Led interface creation and aided in architecturing and building for visualizing ticket routing logic, flagging incorrect assignments, and tracking agent performance.
-                  Developed UI for displaying user availability in real-time based on Teams scheduling data.
-                  Designed dashboard using Chart.js to display skill ratings based on ticket history, integrated with backend app and CosmosDB.`,
+    description: `GPT-communicating AI Ticketing Assistant designed to automatically handle Autotask Ticket Routing when receiving Cloud Service incident report from Customers of a Cloud Service Provider.
+                  Led interface creation and aided in architecturing and building for visualizing ticket routing logic, flagging incorrect assignments, tracking agent performance, and employee skill rating based on ticket history.`,
     stack: [
       'FastAPI',
       'HTMX',
