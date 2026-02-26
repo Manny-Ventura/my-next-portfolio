@@ -15,9 +15,9 @@ export const projects: Project[] = [
     slug: 'portfolio',
     title: 'Personal Portfolio Website',
     description:
-      'A personal portfolio website to showcase my projects and skills as a full-stack developer.',
-    stack: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/yourusername/portfolio',
+      'A personal portfolio website to showcase my projects and skills as a full-stack developer. Chose Next.js to show proficiency in modern technologies such as React.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/Manny-Ventura/my-next-portfolios',
   },
 
   {

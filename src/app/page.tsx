@@ -22,7 +22,7 @@ export default function Home() {
 
       <section className="flex flex-col items-center space-y-16">
         <h2 className="text-2xl font-semibold">Featured Projects</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid-flow-col">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}
