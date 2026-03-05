@@ -15,8 +15,8 @@ export default function Home() {
           I build responsive, accessible web applications with modern technologies.
         </p>
         <p className="text-center text-lg">
-          I am a Software Engineer and full-stack web developer. I have architectured and created
-          production-level applications in various programming languages.
+          I am a Software Engineer and full-stack web developer. I have architectured, created, and
+          deployed production-level applications.
         </p>
       </section>
 
@@ -33,7 +33,8 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">About Me</h2>
         <p className="text-lg">
           I'm a passionate full-stack web developer with experience in building modern web
-          applications using Python, HTMX, React, Next.js, and TypeScript.
+          applications using Python, HTMX, React, Next.js, and TypeScript. Feel free to learn more{' '}
+          <a href="/about">about me.</a>
         </p>
       </section>
     </>
