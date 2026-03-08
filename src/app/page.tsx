@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Hero from '@/components/Hero'
 import { projects } from '@/data/projects'
 import ProjectCard from '@/components/ProjectCard'
 
@@ -33,9 +31,10 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">About Me</h2>
         <p className="text-lg">
           I'm a passionate full-stack web developer with experience in building modern web
-          applications using Python, HTMX, React, Next.js, and TypeScript. Feel free to learn more{' '}
-          <a href="/about">about me.</a>
+          applications using Python, HTMX, React, Next.js, and TypeScript.
         </p>
+                  <a className="space-y-2 rounded-md border border-[var(--border)] bg-[var(--surface)] p-2 hover:bg-[var(--bg)] transition-colors duration:150" href="/about">Learn more about me.</a>
+
       </section>
     </>
   )

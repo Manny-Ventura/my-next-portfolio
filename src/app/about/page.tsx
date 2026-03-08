@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <div className="flex flex-col gap-4 text-center">
+    <div className="flex flex-col gap-4 text-center items-center">
       <h1>About Me...</h1>
       <h2>Hello, my name is Manuel Ventura!</h2>
       <p className="md:w-md lg:w-lg">I am a Software Developer out of upstate South Carolina.
@@ -11,6 +11,9 @@ export default function Page() {
         I have professional experience with Python, React, HTMX, NoSQL, Javascript, and more. 
         I am always looking to expand my skillset and learn new technologies.
       </p>
+  
+      <a href="/contact" className="space-y-2 rounded-md border border-[var(--border)] bg-[var(--surface)] p-2 hover:bg-[var(--bg)] transition-colors duration:150">Get in Contact</a>
+
     </div>
   )
 }
