@@ -1,9 +1,10 @@
+'use client'
+
 import Link from 'next/link'
+import { X, Menu } from 'lucide-react'
 import { useState } from 'react'
-import { Menu, X }
 
 export default function Navbar() {
-  
   const [open, setOpen] = useState(false)
 
   function toggleMenu() {
@@ -11,34 +12,66 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex justify-around p-4">
-      <div>
-        <h3>Manny Ventura</h3>
-      </div>
-      <Link
-        href="/"
-        className="duration:150 border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)]"
-      >
-        Home
-      </Link>
-      <Link
-        className="duration:150 border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)]"
-        href="/projects"
-      >
-        Projects
-      </Link>
-      <Link
-        className="duration:150 border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)]"
-        href="/about"
-      >
-        About
-      </Link>
-      <Link
-        className="duration:150 border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)]"
-        href="/contact"
-      >
-        Contact
-      </Link>
-    </nav>
+    <div className="flex flex-grow items-center justify-around px-5 py-5">
+      <nav className="w-full">
+        <div className="flex w-full justify-around">
+          <div className="px-auto hidden md:flex">
+            <h3>Manny Ventura</h3>
+          </div>
+          <Link
+            href="/"
+            className="duration:150 hidden border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)] md:flex"
+          >
+            Home
+          </Link>
+          <Link
+            className="duration:150 hidden border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)] md:flex"
+            href="/projects"
+          >
+            Projects
+          </Link>
+          <Link
+            className="duration:150 hidden border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)] md:flex"
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="duration:150 hidden border-b-2 border-transparent text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--text-primary)] md:flex"
+            href="/contact"
+          >
+            Contact
+          </Link>
+        </div>
+        <div className="flex justify-between md:hidden">
+          {open && <h1 className="p-3">Manny</h1>}
+          <button className="justify-self-end md:hidden" onClick={toggleMenu}>
+            {open ? <X /> : <Menu />}
+          </button>
+        </div>
+        {open && (
+          <div className="flex flex-col items-center">
+            <a
+              className="w-full border-b-2 border-transparent p-2 text-center hover:border-[var(--accent)]"
+              href="/projects"
+            >
+              Projects
+            </a>
+            <a
+              className="w-full border-b-2 border-transparent p-2 text-center hover:border-[var(--accent)]"
+              href="/about"
+            >
+              About
+            </a>
+            <a
+              className="w-full border-b-2 border-transparent p-2 text-center hover:border-[var(--accent)]"
+              href="/contact"
+            >
+              Contact
+            </a>
+          </div>
+        )}
+      </nav>
+    </div>
   )
 }
