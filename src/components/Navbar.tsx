@@ -1,6 +1,15 @@
 import Link from 'next/link'
+import { useState } from 'react'
+import { Menu, X }
 
 export default function Navbar() {
+  
+  const [open, setOpen] = useState(false)
+
+  function toggleMenu() {
+    setOpen(!open)
+  }
+
   return (
     <nav className="flex justify-around p-4">
       <div>
