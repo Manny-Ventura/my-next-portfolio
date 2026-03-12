@@ -44,7 +44,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="flex justify-between md:hidden">
-          {open && <h1 className="p-3">Manny</h1>}
+          <h1 className="p-3">Manny Ventura</h1>
           <button className="justify-self-end md:hidden" onClick={toggleMenu}>
             {open ? <X /> : <Menu />}
           </button>
@@ -52,19 +52,19 @@ export default function Navbar() {
         {open && (
           <div className="flex flex-col items-center">
             <a
-              className="w-full border-b-2 border-transparent p-2 text-center hover:border-[var(--accent)]"
+              className="duration:150 w-full border-2 border-[var(--border)] border-transparent bg-[var(--surface)] p-2 text-center transition-colors hover:bg-[var(--bg)]"
               href="/projects"
             >
               Projects
             </a>
             <a
-              className="w-full border-b-2 border-transparent p-2 text-center hover:border-[var(--accent)]"
+              className="duration:150 w-full border-2 border-[var(--border)] border-transparent bg-[var(--surface)] p-2 text-center transition-colors hover:bg-[var(--bg)]"
               href="/about"
             >
               About
             </a>
             <a
-              className="w-full border-b-2 border-transparent p-2 text-center hover:border-[var(--accent)]"
+              className="duration:150 w-full border-2 border-[var(--border)] border-transparent bg-[var(--surface)] p-2 text-center transition-colors hover:bg-[var(--bg)]"
               href="/contact"
             >
               Contact
