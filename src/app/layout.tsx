@@ -20,7 +20,7 @@ export default function RootLayout({
           <Navbar />
         </header>
 
-        <main className="mx-auto max-w-7xl grow space-y-24 px-6 py-12">{children}</main>
+        <main className="mx-auto max-w-2xl grow space-y-24 px-6 py-12">{children}</main>
 
         <footer className="h-full border-2 border-[var(--border)] bg-[var(--surface)] p-10 text-center">
           <Footer />

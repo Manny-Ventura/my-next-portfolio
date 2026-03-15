@@ -2,7 +2,7 @@ import type { Project } from '@/data/projects'
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="w-lg space-y-2 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 md:w-md">
+    <article className="space-y-2 rounded-xl border border-[var(--border)] bg-[var(--surface)] p-6 md:w-md">
       <h3 className="text-center text-lg font-semibold">{project.title}</h3>
       <p className="text-[var(--text-secondary)]">{project.description}</p>
       {project.githubUrl && (
