@@ -3,6 +3,7 @@ import ProjectCard from '@/components/ProjectCard'
 
 export default function Home() {
   const featuredProjects = projects.filter((projects) => projects.featured)
+
   return (
     <>
       <section className="flex flex-col items-center space-y-16 text-center">
