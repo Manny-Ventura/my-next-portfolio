@@ -10,9 +10,12 @@ export default function ProjectCard({ project }: { project: Project }) {
           See in Github
         </a>
       )}
+      {project.liveUrlNotes && (
+          <p><b>Live Site Note:</b> {project.liveUrlNotes}</p>
+      )}
       {project.liveUrl && (
         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-          View Live Site
+          View Live Site 
         </a>
       )}
     </article>

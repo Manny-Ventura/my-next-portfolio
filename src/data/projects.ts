@@ -25,7 +25,7 @@ export const projects: Project[] = [
     slug: 'tenant-detective',
     title: 'Tenant Detective™',
     description: `Microsoft 365 optimization application that breaks down your licensing, usage, and security posture as well as optimized cost and recommendations. 
-    Application was used to land a client resulting in 200k yearly contract. NOTE: live site is currently unmaintained`,
+    Application was used to land a client resulting in 200k yearly contract.`,
     stack: [
       'Python',
       'HTMX',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
       'Flower',
     ],
     liveUrl: 'https://tenantdetective.plow.net/',
-    liveUrlNotes: 'Site is not currently maintained. SSL certification is outdated, but site is still viewable in Edge.',
+    liveUrlNotes: 'Site is not currently maintained. SSL certification is outdated, but site is still viewable in Microsoft Edge.',
     featured: true,
   },
 
