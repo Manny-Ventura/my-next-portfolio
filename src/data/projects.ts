@@ -7,6 +7,7 @@ export type Project = {
   stack: string[]
   githubUrl?: string
   liveUrl?: string
+  liveUrlNotes?: string
   featured?: boolean
 }
 
@@ -24,7 +25,7 @@ export const projects: Project[] = [
     slug: 'tenant-detective',
     title: 'Tenant Detective™',
     description: `Microsoft 365 optimization application that breaks down your licensing, usage, and security posture as well as optimized cost and recommendations. 
-    Application was used to land a client resulting in 200k yearly contract.`,
+    Application was used to land a client resulting in 200k yearly contract. NOTE: live site is currently unmaintained`,
     stack: [
       'Python',
       'HTMX',
@@ -42,6 +43,7 @@ export const projects: Project[] = [
       'Flower',
     ],
     liveUrl: 'https://tenantdetective.plow.net/',
+    liveUrlNotes: 'Site is not currently maintained. SSL certification is outdated, but site is still viewable in Edge.',
     featured: true,
   },
 
